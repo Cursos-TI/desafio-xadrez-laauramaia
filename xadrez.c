@@ -67,6 +67,18 @@ while ( i < 5)
      i++;
  } while (i < 8);
 
+ // Movimentação do cavalo
+
+ printf("Movimento do cavalo 2 casas para baixo e 1 casa para a esquerda\n");
+
+
+ for ( int i = 0; i < 1; i++){
+printf("Casa 1: baixo\n");
+printf("Casa 2: baixo\n");
+printf("Casa 3: esquerda\n");
+
+ }
+ 
  return 0;
 
 }
