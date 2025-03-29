@@ -75,6 +75,7 @@ while ( i < 5)
 
  int movimentos = 1; // Numero de movimentos completos do cavalo
  int j = 0; // contador do loop externo
+ int casa = 1; // contador para numerar as casas
  
  // loop externo usando while para repetir o movimento, se necessário
 
@@ -83,14 +84,17 @@ while ( i < 5)
 
     // loop interno usando for para mover uma casa para baixo
     for (i = 0; i < 2; i++) {
-        printf("Baixo\n");
+        printf(" Casa %d: Baixo\n", casa);
+   casa ++;
+
     }
 
     // loop interno usando for para mover uma casa para a esquerda
 
     for ( i = 0; i < 1; i++) {
-        printf("Esquerda\n");
+        printf("Casa %d: Esquerda\n", casa);
 
+        casa++;
     }
 
         // Linha em branco para separar os movimentos
