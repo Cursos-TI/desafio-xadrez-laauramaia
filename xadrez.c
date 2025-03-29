@@ -5,6 +5,7 @@
 // O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
 
 int main() {
+
     // Nível Novato - Movimentação das Peças
     // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
 
@@ -72,13 +73,34 @@ while ( i < 5)
  printf("Movimento do cavalo 2 casas para baixo e 1 casa para a esquerda\n");
 
 
- for ( int i = 0; i < 1; i++){
-printf("Casa 1: baixo\n");
-printf("Casa 2: baixo\n");
-printf("Casa 3: esquerda\n");
+ int movimentos = 1; // Numero de movimentos completos do cavalo
+ int j = 0; // contador do loop externo
+ 
+ // loop externo usando while para repetir o movimento, se necessário
 
- }
+ while (j < movimentos){
+    int i;
+
+    // loop interno usando for para mover uma casa para baixo
+    for (i = 0; i < 2; i++) {
+        printf("Baixo\n");
+    }
+
+    // loop interno usando for para mover uma casa para a esquerda
+
+    for ( i = 0; i < 1; i++) {
+        printf("Esquerda\n");
+
+    }
+
+        // Linha em branco para separar os movimentos
+        printf("\n");
+
+        j++; // incremento do loop externo
+
+}
  
  return 0;
+
 
 }
